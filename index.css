@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-dgreen: #3D8D7A;
+    --color-lgreen: #B3D8A8;
+    --color-ivory: #FBFFE4;
+    --color-lteal: #A3D1C6;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* ✅ Input area stays at bottom, but flexible */
+#input-area {
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 1rem;
+    background: transparent;
+}
+
+/* ✅ User messages */
+.message.user {
+    background-color: #3D8D7A;
+    color: #FBFFE4;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    max-width: 75%;
+    align-self: flex-end;
+    margin: 0.5rem 0;
+    word-wrap: break-word;
+}
+
+/* ✅ Bot messages */
+.message.bot {
+    background-color: #FBFFE4;
+    color: #3D8D7A;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    max-width: 75%;
+    align-self: flex-start;
+    margin: 0.5rem 0;
+    word-wrap: break-word;
+}

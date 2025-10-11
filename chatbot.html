@@ -5,23 +5,82 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DonorLink - Your Go To Place For Giving Back</title>
+    <title>DonorLink Chatbot</title>
   </head>
-  <body>
-    <div id="chat-container">
-      <h1>💬 DonorLink Chatbot</h1>
-      <div id="messages"></div>
 
-      <div id="input-area">
-        <input
-          type="text"
-          id="user-input"
-          placeholder="Type your message..."
-        />
-        <button id="send-btn">Send</button>
+  <body class="bg-lteal font-poppins min-h-screen flex flex-col">
+    <!-- ✅ Navigation bar -->
+    <nav
+      class="font-poppins fixed top-0 left-0 w-full flex items-center justify-center z-10"
+    >
+      <ul
+        class="flex w-1/2 justify-center-safe mt-5 p-5 bg-dgreen/30 text-ivory rounded-full backdrop-blur-sm"
+      >
+        <li class="mx-5">
+          <a
+            class="text-xl font-bold hover:text-dgreen transition-colors duration-300 pr-3"
+            href="/"
+            >Home</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="text-xl hover:text-dgreen transition-colors duration-300 px-3"
+            href="blood.html"
+            >Blood Donor</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="text-xl hover:text-dgreen transition-colors duration-300 px-3"
+            href="organ.html"
+            >Organ Donor</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="text-xl hover:text-dgreen transition-colors duration-300 px-3"
+            href="chatbot.html"
+            >Questions?</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ✅ Main Chat Container -->
+    <div
+      id="chat-container"
+      class="flex flex-col items-center justify-center w-full h-screen pt-28 pb-24"
+    >
+      <!-- Scrollable message box -->
+      <div
+        id="messages"
+        class="w-1/2 flex flex-col overflow-y-auto bg-ivory/80 text-dgreen rounded-xl shadow-inner p-4"
+        style="height: 65vh;"
+      ></div>
+
+      <!-- Input area fixed at bottom -->
+      <div
+        id="input-area"
+        class="fixed bottom-0 left-0 w-full flex justify-center py-4 bg-lteal/50 backdrop-blur-md"
+      >
+        <div class="flex w-1/2">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Enter your question here..."
+            class="border border-dgreen rounded-full px-4 py-2 w-full focus:outline-none text-dgreen bg-ivory"
+          />
+          <button
+            id="send-btn"
+            class="bg-dgreen text-ivory ml-3 px-4 py-2 rounded-full hover:bg-dgreen/80 transition-colors duration-300"
+          >
+            Ask
+          </button>
+        </div>
       </div>
     </div>
 
-    <script type="module" src="/src/chatbot.js"></script>
+    <script type="module" src="/src/chatbot.jsx"></script>
   </body>
 </html>
