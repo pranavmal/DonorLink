@@ -8,3 +8,8 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<Chatbot />);
