@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import ollama from "ollama";
+// import ollama from "ollama";
 import './index.css'
 
 // const messagesDiv = document.getElementById("messages");
@@ -38,3 +38,4 @@ import './index.css'
 // input.addEventListener("keypress", (e) => {
 //   if (e.key === "Enter") sendMessage();
 // });
+
