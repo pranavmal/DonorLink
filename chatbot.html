@@ -1,0 +1,43 @@
+<!-- chatbot.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DonorLink - Your Go To Place For Giving Back</title>
+  </head>
+  <body class="bg-lteal flex justify-center items-center h-screen font-poppins">
+    <nav class="font-poppins fixed top-0 left-0 w-full flex items-center justify-center">
+    <ul class="flex w-1/2 justify-center-safe mt-5 p-5 bg-dgreen/30 text-ivory rounded-full backdrop-blur-sm">
+      <li class="mx-5">
+        <a class="text-xl font-bold hover:text-dgreen transition-colors duration-300 pr-3" href="/">Home</a>
+      </li>
+      <li class="mx-5">
+        <a class="text-xl hover:text-dgreen transition-colors duration-300 px-3" href="blood.html">Blood Donor</a>
+      </li>
+      <li class="mx-5">
+        <a class="text-xl hover:text-dgreen transition-colors duration-300 px-3" href="organ.html">Organ Donor</a>
+      </li>
+      <li class="mx-5">
+        <a class="text-xl hover:text-dgreen transition-colors duration-300 px-3" href="chatbot.html">Questions?</a>
+      </li>
+    </ul>
+  </nav>
+    <div id="root">
+      <div id="messages" class="fixed top-1/5"></div>
+
+      <div id="input-area" class=" fixed bottom-0 items-center justify-center w-1/2 h-1/15 overflow-y-auto">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Enter your question here..."
+          class="border border-dgreen rounded-full px-4 py-2 w-10/12 justify-center-safe focus:outline-none text-dgreen bg-ivory"
+        />
+        <button id="send-btn" class="bg-dgreen text-ivory ml-3 px-4 py-2 rounded-full hover:bg-dgreen/80 transition-colors duration-300">Ask</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/chatbot.jsx"></script>
+  </body>
+</html>
