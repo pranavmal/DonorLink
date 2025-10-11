@@ -8,3 +8,32 @@
     --color-lteal: #A3D1C6;
     --font-poppins: 'Poppins', sans-serif;
 }
+
+#input-area {
+    width: 50%;
+    position: fixed;
+    top: 97%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}
+
+.message.user {
+    background-color: #3D8D7A;
+    color: #FBFFE4;
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    width: 21.25rem;
+    right: 30%;
+}
+
+.message.bot {
+    margin-top: 5rem;
+    background-color: #FBFFE4;
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+    color: #3D8D7A;
+    position: fixed;
+    width: 21.25rem;
+    left: 32%;
+}
