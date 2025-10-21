@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: "index.html",
         blood: "blood.html",
+        organ: "organ.html",
         chatbot: "chatbot.html",
       },
     },
